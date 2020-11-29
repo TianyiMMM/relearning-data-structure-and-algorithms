@@ -2,7 +2,7 @@ public class Test{
 	public static void main(String[] arg){
 		// a graph with nodes with 1 < data <= n, nodes' adjacent nodes list length <= 10
 		// example from page.107 of Crack the Technical Interview
-		n = 10;
+		int n = 10;
 		Graph g = new Graph(n);
 		Node n0 = new Node(0, n);
 		Node n1 = new Node(1, n);

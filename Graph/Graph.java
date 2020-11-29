@@ -1,12 +1,4 @@
 public class Graph{
-	public class Node{
-		int data;
-		Node[] adjacent_nodes;
-		public Node(int data, int n){
-			this.data = data;
-			this.adjacent_nodes = new Node[n];
-		}
-	}
 
 	Node[] nodes;
 	int nodes_num;
@@ -49,10 +41,12 @@ public class Graph{
 	public void print(){
 		for (int i = 0; i < nodes_num; i++){
 			if (nodes[i]!=null){
-				node = nodes[i];
+				Node node = nodes[i];
 				System.out.print(node.data+" adjacent_nodes: ");
 				for (int j = 0; j < nodes_num; j++){
-					System.out.print(node.adjacent_nodes[j]+" ")
+					if (node.adjacent_nodes[j]!=null){
+						System.out.print(node.adjacent_nodes[j].data+" ");
+					}
 				}
 				System.out.println();
 			}
