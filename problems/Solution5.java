@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution {
+public class Solution5 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         Map<ListNode, Integer> storage = new HashMap();
         ListNode nodeA = headA;
